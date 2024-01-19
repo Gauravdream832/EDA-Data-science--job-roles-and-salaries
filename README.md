@@ -1,8 +1,30 @@
 # EDA-Data-science--job-roles-and-salaries
-working of project:
+ project  overview:
 
-Data Loading and Inspection: The dataset is loaded using the pd.read_csv function from the pandas library. Initial inspection of the dataset using head(), shape, info(), and describe() methods. The Unnamed: 0 column is dropped as it seems to be an unnecessary index. Data Cleaning: No missing values found. Unnamed column dropped. Univariate Analysis: Exploration of each feature in the dataset is performed, including both categorical and numeric variables. Categorical variables are visualized using count plots and pie charts. Numeric variables are visualized using box plots, strip plots, and density plots. Word cloud is generated for visualizing job titles. Work Year Analysis: Remote ratio by work year is visualized using scatter plots and count plots. Experience Level Analysis: Employment type by experience level is visualized using count plots. Top 3 job titles by experience level are visualized using count plots. Company size by experience level is visualized using count plots. Company Location Analysis: Experience level distribution across company locations is visualized using count plots. Salary Analysis: Salary analysis is conducted by work year, experience level, company size, and job title. Box plots, strip plots, and kernel density plots are used for visualization. The top 10 job titles with the highest salaries are plotted. Word Cloud Generation: Word cloud is generated to visualize the distribution of job titles. Visualization Techniques: Matplotlib and Seaborn are used for creating various types of plots, such as bar plots, count plots, box plots, strip plots, pie charts, scatter plots, and density plots. Data Manipulation: Pandas functions like replace, crosstab, pivot_table are used for data manipulation. Statistical Analysis: Descriptive statistics are used to summarize the main features of the dataset. Machine Learning: No explicit machine learning techniques are used in this project; it focuses more on exploratory data analysis. 
+# EDA-on-Data-Science-Job-Salaries - Project Overview
+The purpose of this project is to explore every feature in the Dataset to uncover insights.
 
-Result outcomes from this project: 
+## Resources
+* Data Source: The data used is in a csv file containing 607 records and 12 features. 
+  Available on Kaggle: https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries
+* Python Version: 3.9.12
+* Packages: pandas, numpy, matplotlib, seaborn, wordcloud.
 
-Experience Level: A significant percentage of Data Science professionals occupy Senior-level/Expert and Mid-level/Intermediate positions. Executive-level/Directors in Data Science are relatively few, accounting for only 4.28% of the dataset. Job Titles: The top 4 job titles include Data Scientist, Data Engineer, Data Analyst, and Machine Learning Engineer. Other job titles have fewer than 20 occurrences in the dataset. Employment Type: Full-time employment is the most common type, covering 96.9% of the dataset. Freelance is the least common employment type, with only 4 records. Employee Residence & Company Location: The US has the highest frequency in terms of both employee residence and company location. Over 300 employees and companies are based in the US, while other locations have values below 50. Company Size: Medium-sized companies hire more Data professionals in every experience level. Small companies have the fewest Data Science jobs. Work Year: The dataset contains values from 2020 to 2022. The majority of records are from the year 2022. Salary: The average salary in USD is $112,297.87. Executive-level/Directors receive the highest average salary, while Entry-level/Junior roles receive the lowest. Remote Work: A large percentage (62.77%) of professionals report fully remote work, followed by no remote work (20.93%) and partially remote work (16.31%). Work Year Analysis: The dataset contains more records for the year 2022, followed by 2021 and 2020. The density plot shows an increase in the number of Data Science jobs and salaries for each year. Experience Level Analysis: Senior-level/Expert and Mid-level/Intermediate positions are predominant. Executive-level/Directors are few, accounting for only 4.28% of the dataset. Company Location Analysis: The heatmap shows the distribution of experience levels across different company locations. Salary Analysis: The boxplots and density plots illustrate salary distributions across different factors, such as work year, experience level, and company size
+## Exploratory Data Analysis ( EDA)
+Below are highlights of some visualizations carried out on features:
+
+![Untitled](https://user-images.githubusercontent.com/117505903/215131944-41b90a60-afba-48b3-98e1-756f947a1798.jpg)
+
+![highest salary by title](https://user-images.githubusercontent.com/117505903/215128725-9be23f1d-c888-46cb-90d0-4d754fa8c54b.png)
+
+
+
+## Summary of insights:
+* Most Data Science jobs require Senior-level/Expert experience level and very few positions are available for Executive-level/Directors.
+* The most common job titles in the Data Science field are Data Scientist, Data Engineer, Data Analyst and Machine Learning Engineer.
+* Most Data Science jobs are Full-time positions.
+* Most Data Science employees and Companies are resident in the United States. However, the location where the highest average salary is paid is Russia; followed closely by the United States.
+* The Number of Data Science jobs and the salary are increasing with each year and experience-level.
+* Medium-sized and Large-sized companies pay high salaries in comparison to small-sized companies.
+* The average salary for Data Science Jobs in USD is 112,297.87.
+
